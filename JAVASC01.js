@@ -23,3 +23,18 @@ function name() {
 $(document).ready(function() {
     name();
 })
+
+
+function darkmode() {
+    document.getElementById("body").style.backgroundColor = "rgb(31, 29, 29)";
+    document.getElementById("body").style.color = "white";
+    document.getElementById("Jumbotron").style.backgroundColor = "rgb(31, 29, 29)";
+    document.getElementById("Jumbotron").style.color = "white";
+}
+
+function whitemode() {
+    document.getElementById("body").style.backgroundColor = "white";
+    document.getElementById("body").style.color = "black";
+    document.getElementById("Jumbotron").style.backgroundColor = "white";
+    document.getElementById("Jumbotron").style.color = "black";
+}

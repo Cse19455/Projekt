@@ -27,7 +27,7 @@
     </style>
 </head>
 
-<body onresize="name()">
+<body onresize="name()" id="body">
     <!--Navbar-->
     <nav class=" nav navbar navbar-expand-sm bg-dark navbar-dark sticky-top" style="font-family: 'Courgette',cursive;">
         <!-- Brand/logo -->
@@ -64,6 +64,14 @@
             <!--Unnötiger Button-->
             <button class="text-white bg-dark" onclick="namener() ">Insert Name</button>
         </div>
+        <div>
+            <!--Unnötiger Button-->
+            <button class="text-white bg-dark" style="margin-left: 20%;" onclick="darkmode() "><i class="fas fa-backward"></i></button>
+        </div>
+        <div>
+            <!--Unnötiger Button-->
+            <button class="text-white bg-dark" style="margin-left: 30%;" onclick="whitemode() "><i class="fas fa-forward"></i></button>
+        </div>
 
     </nav>
 
@@ -73,9 +81,9 @@
         <!--Tab1 (Startseite) [Relevant für die 1.Abgabe]-->
         <div id="home" class="container tab-pane active "><br>
 
-            <h3 class="jumbotron bg-white" style="font-family: 'Press Start 2P', cursive;">VideoGaming<img src="Undertale Herz.png" width="70px"></h3>
+            <h3 class="jumbotron " id="Jumbotron" style=" background-color: white; font-family: 'Press Start 2P', cursive;">VideoGaming<img src="Undertale Herz.png" width="70px"></h3>
 
-            <div class="border border-dark" style="width: 45%; float:left;margin-right: 10%;padding: 5px;">
+            <div class="border border-dark" style=" width: 45%; float:left;margin-right: 10%;padding: 5px;">
                 <div style="text-align: center;">Inhaltsverzeichnis :</div>
                 <hr>
                 <ul>
@@ -278,7 +286,6 @@
             <h3>Adventure Games</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
         </div>
-
 </body>
 
 <!--Footer-->
