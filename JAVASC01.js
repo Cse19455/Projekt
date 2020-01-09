@@ -32,6 +32,7 @@ function darkmode() {
     var x = document.getElementsByClassName("jumbotron");
     for (var i = 0; i < x.length; i++) {
         x[i].style.backgroundColor = "rgb(31, 29, 29)";
+        x[i].style.color = "white";
     }
 }
 
