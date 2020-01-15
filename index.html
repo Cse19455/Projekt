@@ -17,7 +17,9 @@
     <link href="https://fonts.googleapis.com/css?family=Courgette&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Kumar+One&display=swap" rel="stylesheet">
+    <!--font-family: 'Kumar One', cursive;-->
     <link href="https://fonts.googleapis.com/css?family=Indie+Flower&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Crimson+Text&display=swap" rel="stylesheet">
     <script src="JAVASC01.js"></script>
     <script src="snake.js"></script>
     <style>
@@ -26,7 +28,7 @@
             height: 100%;
         }
         
-        div {
+        #menu1 {
             font-family: 'Indie Flower', cursive;
         }
         
@@ -108,48 +110,20 @@
     <!--Tab-content (Tab Seiten )-->
     <div class="tab-content ">
         <!--Tab1 (Startseite) [Relevant für die 1.Abgabe]-->
-        <div id="home" class="container tab-pane active "><br>
+        <div id="home" class="container tab-pane active " style="background-image: url();"><br>
 
             <h3 class="jumbotron" style=" background-color: white; font-family: 'Press Start 2P', cursive;">VideoGaming<img src="Undertale Herz.png" width="70px"></h3>
 
-            <div class="border border-dark" style=" width: 45%; float:left;margin-right: 10%;padding: 5px;">
-                <div style="text-align: center;">Inhaltsverzeichnis :</div>
-                <hr>
-                <ul>
-                    <li><a href="#menu1" data-toggle="tab" style="text-decoration: none; ">Geräte</a> </li>
-                    <ul>
-                        <li><code>8-Consolen Generation</code></li>
-                        <li><code>PC</code></li>
-                    </ul><br>
-                    <li><a href="#menu2" data-toggle="tab" style="text-decoration: none;">Controller</a></li><br>
-                    <li>
-                        Genres
-                    </li>
-                    <ul>
-                        <li><a style="text-decoration: none;" href="#shooter" data-toggle="tab"><code>Shooter</code></a></li>
-                        <li><a style="text-decoration: none;" href="#Jump" data-toggle="tab"><code>Jump & Run</code></a></li>
-                    </ul><br>
-                    <li>E-Sports</li>
 
-                </ul>
-            </div>
-            <div style="width: 45%; float:left;">
-                <h3>Definition :</h3>
-                <div>A video game is an electronic game that involves interaction with a user interface to generate visual feedback on a two- or three-dimensional video display device such as a touchscreen, virtual reality headset or monitor/TV set. </div><br>
-                <div>Since the 1980s, video games have become an increasingly important part of the entertainment industry, and whether they are also a form of art is a matter of dispute. The electronic systems used to play video games are called platforms.
-                    Video games are developed and released for one or several platforms and may not be available on others. </div><br>
-
-            </div>
-            <span id="size">
-            </span>
         </div>
         <!--Tab2-->
         <div id="menu1" class="container tab-pane fade "><br>
-            <h1 class="jumbotron " style="background-color: white;font-family: 'Kumar One', cursive;">Geräte</h1>
+
+            <h1 class="jumbotron " style="background-color: white;font-family: 'Crimson Text', serif;">Geräte</h1>
             <ul>
                 <li>
                     <hr>
-                    <h4 style="width: 100%;">8-Consolen Generation</h4>
+                    <h4 style="width: 100%;font-family: 'Crimson Text', serif;">8-Consolen Generation</h4>
                     <hr>
                 </li>
 
@@ -167,7 +141,7 @@
                         <div class="carousel-inner ">
                             <div class="carousel-item active ">
                                 <div class="mx-auto " style="width:150px ">
-                                    <h1><span class="badge badge-dark ">PS4</span></h1>
+                                    <h1><span class="badge badge-primary ">PS4</span></h1>
                                 </div>
                                 <img class="img-fluid" src="Ps4.png " alt="Los Angeles " width="1100 " height="500 ">
                                 <h2>Publisher : Sony</h2>
@@ -175,16 +149,16 @@
                                     Februar 2013 auf einer Pressekonferenz von Sony vorgestellt. Die Markteinführung erfolgte am 15. November 2013 in Nordamerika und am 29. November 2013 in Europa, Südamerika und Australien. Die PlayStation 4 steht als
                                     Konsole der achten Generation in direkter Konkurrenz zu Microsofts Xbox One sowie Nintendos Wii U und Nintendo Switch. Die PlayStation 4 ist die insgesamt sechste Spielkonsole der Marke PlayStation, ausgenommen Hardware-Revisionen.
                                     Am 8. Oktober 2019 wurde der Nachfolger PlayStation 5 vorgestellt.</div><br>
-                                <div class="card container-md shadow-lg p-4 mb-4 bg-dark text-white" style="width: fit-content; ">
-                                    <div class="card-header ">Technische Daten</div>
+                                <div class="card container-md shadow-lg p-4 mb-4 bg-dark text-white border border-primary" style="width: fit-content;  font-family: 'Crimson Text', serif; ">
+                                    <div class="card-header "><b>Technische Daten</b></div>
                                     <div class="card-body ">
-                                        <div><kbd>Hauptprozessor :</kbd></div><br>
+                                        <div><kbd class="bg-primary">Hauptprozessor :</kbd></div><br>
                                         <div>AMD Jaguar x86 (AMD64-Architektur) (Octa-Core getaktet mit 1.6 GHz (2.1 GHz bei der PS4 Pro))</div><br>
-                                        <div><kbd>Grafikprozessor :</kbd></div><br>
+                                        <div><kbd class="bg-primary">Grafikprozessor :</kbdclass="bg-primary"></div><br>
                                         <div> AMD-Radeon-basiertes Design namens Graphics Core Next (SoC)</div><br>
-                                        <div><kbd>Speichermedien :</kbd></div><br>
+                                        <div><kbd class="bg-primary">Speichermedien :</kbd></div><br>
                                         <div>DVD-ROM, Blu-ray Disc, Cloud, Festplatte, USB-Massenspeicher</div><br>
-                                        <div><kbd>Controller :</kbd></div><br>
+                                        <div><kbd class="bg-primary">Controller :</kbd></div><br>
                                         <div>Funkcontroller (Bluetooth): DualShock 4, PlayStation Move, PlayStation Vita</div>
                                     </div>
                                 </div>
@@ -204,8 +178,8 @@
                                     wurde ein überarbeitetes Modell namens Xbox One S, welches neben weiteren neuen Features Erneuerungen in der Bildqualität (HDR10) und der Auflösung in UHD (nur in Bildern/Videos) mit sich brachte, auf dem Markt eingeführt.[11]
                                     Im November 2017 wurde mit der Xbox One X eine kostenintensivere und leistungsfähigere Version der Konsole veröffentlicht. Am 16. April 2019 kündigte Microsoft mit der Xbox One S All-Digital Edition eine Xbox One S
                                     ohne Laufwerk an. Der Nachfolger wurde unter dem Konzeptnamen Project Scarlett am 9. Juni 2019 auf der Electronic Entertainment Expo in Los Angeles angekündigt. Der Release ist für 2020 geplant</div><br>
-                                <div class="card container-md shadow-lg p-4 mb-4 bg-dark text-white" style="width: fit-content; ">
-                                    <div class="card-header ">Technische Daten</div>
+                                <div class="card container-md shadow-lg p-4 mb-4 bg-dark text-white border border-success" style="width: fit-content;  font-family: 'Crimson Text', serif; ">
+                                    <div class="card-header "><b>Technische Daten</b></div>
                                     <div class="card-body ">
                                         <div><kbd class="bg-success ">Hauptprozessor :</kbd></div><br>
                                         <div>AMD Jaguar x86 (AMD64) Octa-Core</div><br>
@@ -221,7 +195,7 @@
 
                             <div class="carousel-item">
                                 <div class="mx-auto " style="width:300px ">
-                                    <h1><span class="badge badge-primary ">Nintendo Switch</span></h1>
+                                    <h1><span class="badge badge-danger ">Nintendo Switch</span></h1>
                                 </div>
                                 <img class="img-fluid" src="Switch.png " alt="New York " width="1100 " height="500 ">
                                 <h2>Publisher : Nintendo</h2>
@@ -229,16 +203,16 @@
                                     2017 in Argentinien.[7] Als Hybrid lässt sich der Nachfolger der Wii U sowohl als stationäre, mit einem externen Bildschirm verbundene Konsole nutzen als auch für Handheld-Spiele. Abnehmbare Bedienelemente namens „Joy-Con“
                                     ermöglichen Spiele in eine dritten Variante, dem sogenannten Tisch-Modus. Die Nintendo Switch gehört zur achten Konsolengeneration und steht in direkter Konkurrenz zu Sonys PlayStation 4 und Microsofts Xbox One.
                                 </div><br>
-                                <div class="card container-md shadow-lg p-4 mb-4 bg-dark text-white" style="width: fit-content; ">
-                                    <div class="card-header ">Technische Daten</div>
+                                <div class="card container-md shadow-lg p-4 mb-4 bg-dark text-white border border-danger" style="width: fit-content; font-family: 'Crimson Text', serif; ">
+                                    <div class="card-header "><b>Technische Daten</b></div>
                                     <div class="card-body ">
-                                        <div><kbd class="bg-primary ">Media :</kbd></div><br>
+                                        <div><kbd class="bg-danger ">Media :</kbd></div><br>
                                         <div>Game Card Digital distribution</div><br>
-                                        <div><kbd class="bg-primary ">System-on-chip used :</kbd></div><br>
+                                        <div><kbd class="bg-danger ">System-on-chip used :</kbd></div><br>
                                         <div>Nvidia Tegra X1–based</div><br>
-                                        <div><kbd class="bg-primary">CPU :</kbd></div><br>
+                                        <div><kbd class="bg-danger">CPU :</kbd></div><br>
                                         <div>Quad-core Cortex-A57 + quad-core Cortex-A53 @ 1.02 GHz</div><br>
-                                        <div><kbd class="bg-primary ">Display :</kbd></div><br>
+                                        <div><kbd class="bg-danger ">Display :</kbd></div><br>
                                         <div> 6.2-inch, 1280 × 720p LCD (237 ppi)</div>
                                     </div>
                                 </div>
