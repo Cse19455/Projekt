@@ -16,12 +16,16 @@
     <!-- Google Fonts-->
     <link href="https://fonts.googleapis.com/css?family=Courgette&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bangers&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Kumar+One&display=swap" rel="stylesheet">
     <!--font-family: 'Kumar One', cursive;-->
     <link href="https://fonts.googleapis.com/css?family=Indie+Flower&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Crimson+Text&display=swap" rel="stylesheet">
     <script src="JAVASC01.js"></script>
-    <script src="snake.js"></script>
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v2.0.1/css/unicons.css">
+    <link rel="preload" href="https://swordshield.pokemon.com/assets/img/common/logo/en-us/logo-pokemon-armor.png">
+    <link rel="preload" href="https://swordshield.pokemon.com/assets/img/common/logo/en-us/logo-pokemon-crown.png">
+    <link rel="preload" href="https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/International_Pok%C3%A9mon_logo.svg/280px-International_Pok%C3%A9mon_logo.svg.png">
     <style>
         .carousel-inner img {
             width: 100%;
@@ -30,12 +34,6 @@
         
         #menu1 {
             font-family: 'Indie Flower', cursive;
-        }
-        
-        .snake {
-            position: absolute;
-            width: 10px;
-            z-index: -1;
         }
     </style>
 </head>
@@ -54,7 +52,7 @@
 
 
     <!--Navbar-->
-    <nav class=" nav navbar navbar-expand-sm bg-dark navbar-dark sticky-top" style="font-family: 'Courgette',cursive;">
+    <nav class=" nav navbar navbar-expand-sm bg-dark navbar-dark sticky-top border-bottom border-black" style="font-family: 'Courgette',cursive;">
         <!-- Brand/logo -->
         <a class="navbar-brand" href="#">
             <img src="Unbenannt-1.png" alt="logo" style="width:80px;" onclick="window.close()" data-toggle="tooltip" title="Schließt das Fenster!">
@@ -98,13 +96,7 @@
             <!--Unnötiger Button-->
             <button class="text-white bg-dark" style="margin-left: 30%;border: grey;" onclick="whitemode() "><i class="fas fa-forward"></i></button>
         </div>
-
     </nav>
-    <!-- Alert -->
-    <div class="alert alert-success alert-dismissible" id="Alert" style="visibility: hidden;">
-        <button type="button" class="close" data-dismiss="alert">&times;</button>
-        <strong>Success!</strong> Your name is
-    </div>
 
     </div>
     <!--Tab-content (Tab Seiten )-->
@@ -112,53 +104,104 @@
         <!--Tab1 (Startseite) [Relevant für die 1.Abgabe]-->
         <div id="home" class="container tab-pane active " style="background-image: url();"><br>
 
-            <h3 class="jumbotron" style=" background-color: white; font-family: 'Press Start 2P', cursive;">VideoGaming<img src="Undertale Herz.png" width="70px"></h3>
+            <h1 class="jumbotron" style="font-size: 5vw; background-image: url('Hintergrund.jpg');background-position: left;background-repeat: no-repeat; font-family: 'Press Start 2P', cursive;width: 117%; margin-left: -10%;padding-bottom: 20%; padding-top: 20%;">VideoGaming<img src="Undertale Herz.png" width="70px"></h1>
 
+            <div style="position: fixed;"></div>
+            <!--Carousel-->
+            <div class="container mt-3">
+
+                <div id="myCarouselli" class="carousel slide" data-ride="carousel">
+
+                    <!-- Indicators -->
+                    <ul class="carousel-indicators">
+                        <li data-target="#myCarouselli" data-slide-to="0" class="active"></li>
+                        <li data-target="#myCarouselli" data-slide-to="1"></li>
+                        <li data-target="#myCarouselli" data-slide-to="2"></li>
+                    </ul>
+
+                    <!-- The slideshow -->
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <h3 class="jumbotron" style="background-color: transparent;text-align: center;"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/International_Pok%C3%A9mon_logo.svg/280px-International_Pok%C3%A9mon_logo.svg.png" alt="Pokemon" style="width: 30%;"></h3>
+                            <div class="row">
+                                <h5 class="col" style="font-family: 'Bangers', cursive; text-align: center;">Galar Region<img src="map.jpg" alt=""></h5>
+                                <div class="col text-white" style="background-image: url('map_armor_2x.jpg');background-size: cover;">
+                                    <h5 style="font-family: 'Bangers', cursive;text-align: center;">Rüstungsinsel</h5> <br><br><br><img src="pokemon_urshifu.png" alt="" style="width:30%;height: auto;">
+                                    <img src="https://swordshield.pokemon.com/assets/img/common/logo/en-us/logo-pokemon-armor.png" alt="" style="float: right;width: 40%;height: auto;margin-top: 95%;"></div>
+                                <div class="col text-white" style="background-image: url('map_crown_2x.jpg');background-size: cover;">
+                                    <h5 style="font-family: 'Bangers', cursive;text-align: center;"> Kronentundra</h5>
+                                    <img src="pokemon_calyrex.png" alt="" style=" width:40%;height: auto; "><br>
+                                    <img src="https://swordshield.pokemon.com/assets/img/common/logo/en-us/logo-pokemon-crown.png" alt="crown" style="float: left;width: 40%;height: auto;margin-top: 80%;">
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="carousel-item ">
+                            <div class="row">
+                                <div class="col-sm-4"><img src="https://store-images.s-microsoft.com/image/apps.37905.13670972585585116.7f29dc82-c969-4e89-aaf9-7c0e3f52d890.2e5a9c92-cf00-4c10-ae28-264c564478c3?mode=scale&q=90&h=300&w=200" alt="" height="40%"></div>
+                                <div class="col-sm-8"><img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.ytimg.com%2Fvi%2FsBMOXHrXJtI%2Fmaxresdefault.jpg&f=1&nofb=1" alt=""></div>
+                            </div>
+                        </div>
+                        <div class="carousel-item ">
+                            <img src="ny.jpg " alt="New York " width="1100 " height="500 ">
+                        </div>
+                    </div>
+
+                    <!-- Left and right controls -->
+                    <a class="carousel-control-prev " href="#myCarouselli " data-slide="prev">
+                        <span class="carousel-control-prev-icon "></span>
+                    </a>
+                    <a class="carousel-control-next " href="#myCarouselli " data-slide="next">
+                        <span class="carousel-control-next-icon "></span>
+                    </a>
+                </div>
+
+            </div>
 
         </div>
         <!--Tab2-->
         <div id="menu1" class="container tab-pane fade "><br>
 
-            <h1 class="jumbotron " style="background-color: white;font-family: 'Crimson Text', serif;">Geräte</h1>
+            <h1 class="jumbotron " style="background-color: white;font-family: 'Crimson Text', serif; ">Geräte</h1>
             <ul>
                 <li>
                     <hr>
-                    <h4 style="width: 100%;font-family: 'Crimson Text', serif;">8-Consolen Generation</h4>
+                    <h4 style="width: 100%;font-family: 'Crimson Text', serif; ">8-Consolen Generation</h4>
                     <hr>
                 </li>
 
                 <div>
                     <!--Carousel-->
-                    <div id="myCarousel" class="carousel slide" data-ride="carousel " style="margin-right: 5%;">
+                    <div id="myCarousel" class="carousel slide " data-ride="carousel" style="margin-right: 5%; ">
 
                         <!-- Indicators -->
-                        <ul class="carousel-indicators">
-                            <li data-target="#myCarousel" data-slide-to="0" class="active "></li>
+                        <ul class="carousel-indicators ">
+                            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
                             <li data-target="#myCarousel" data-slide-to="1"></li>
                             <li data-target="#myCarousel" data-slide-to="2"></li>
                         </ul>
                         <!-- The slideshow -->
-                        <div class="carousel-inner ">
+                        <div class="carousel-inner">
                             <div class="carousel-item active ">
                                 <div class="mx-auto " style="width:150px ">
                                     <h1><span class="badge badge-primary ">PS4</span></h1>
                                 </div>
-                                <img class="img-fluid" src="Ps4.png " alt="Los Angeles " width="1100 " height="500 ">
+                                <img class="img-fluid " src="Ps4.png " alt="Los Angeles " width="1100 " height="500 ">
                                 <h2>Publisher : Sony</h2>
                                 <div>Die PlayStation 4 (offizielle Abkürzung: PS4) ist eine stationäre Spielkonsole von Sony Interactive Entertainment LLC (bis April 2016: Sony Computer Entertainment Inc.). Sie wurde als Nachfolger der PlayStation 3 am 20.
                                     Februar 2013 auf einer Pressekonferenz von Sony vorgestellt. Die Markteinführung erfolgte am 15. November 2013 in Nordamerika und am 29. November 2013 in Europa, Südamerika und Australien. Die PlayStation 4 steht als
                                     Konsole der achten Generation in direkter Konkurrenz zu Microsofts Xbox One sowie Nintendos Wii U und Nintendo Switch. Die PlayStation 4 ist die insgesamt sechste Spielkonsole der Marke PlayStation, ausgenommen Hardware-Revisionen.
                                     Am 8. Oktober 2019 wurde der Nachfolger PlayStation 5 vorgestellt.</div><br>
-                                <div class="card container-md shadow-lg p-4 mb-4 bg-dark text-white border border-primary" style="width: fit-content;  font-family: 'Crimson Text', serif; ">
+                                <div class="card container-md shadow-lg p-4 mb-4 bg-dark text-white border border-primary " style="width: fit-content; font-family: 'Crimson Text', serif; ">
                                     <div class="card-header "><b>Technische Daten</b></div>
                                     <div class="card-body ">
-                                        <div><kbd class="bg-primary">Hauptprozessor :</kbd></div><br>
+                                        <div><kbd class="bg-primary ">Hauptprozessor :</kbd></div><br>
                                         <div>AMD Jaguar x86 (AMD64-Architektur) (Octa-Core getaktet mit 1.6 GHz (2.1 GHz bei der PS4 Pro))</div><br>
-                                        <div><kbd class="bg-primary">Grafikprozessor :</kbdclass="bg-primary"></div><br>
+                                        <div><kbd class="bg-primary ">Grafikprozessor :</kbd class="bg-primary "></div><br>
                                         <div> AMD-Radeon-basiertes Design namens Graphics Core Next (SoC)</div><br>
-                                        <div><kbd class="bg-primary">Speichermedien :</kbd></div><br>
+                                        <div><kbd class="bg-primary ">Speichermedien :</kbd></div><br>
                                         <div>DVD-ROM, Blu-ray Disc, Cloud, Festplatte, USB-Massenspeicher</div><br>
-                                        <div><kbd class="bg-primary">Controller :</kbd></div><br>
+                                        <div><kbd class="bg-primary ">Controller :</kbd></div><br>
                                         <div>Funkcontroller (Bluetooth): DualShock 4, PlayStation Move, PlayStation Vita</div>
                                     </div>
                                 </div>
@@ -168,7 +211,7 @@
                                 <div class="mx-auto " style="width:200px ">
                                     <h1><span class="badge badge-success ">XBOX ONE</span></h1>
                                 </div>
-                                <img class="img-fluid" src="XBOX.png " alt="Chicago " width="1100 " height="500 ">
+                                <img class="img-fluid " src="XBOX.png " alt="Chicago " width="1100 " height="500 ">
                                 <h2>Publisher : Microsoft</h2>
                                 <div>Die Xbox One ist eine von Microsoft entwickelte stationäre Spielkonsole und der Nachfolger der Xbox 360. Das System wurde am 21. Mai 2013 vorgestellt und steht als Konsole der achten Generation in direkter Konkurrenz zu
                                     Sonys PlayStation 4 und Nintendos Wii U und Nintendo Switch.[7] Es ist die insgesamt dritte Spielkonsole der Xbox-Marke, Hardware-Revisionen ausgenommen. Microsoft wählte gezielt die Bezeichnung „One“, da die neue Xbox
@@ -178,7 +221,7 @@
                                     wurde ein überarbeitetes Modell namens Xbox One S, welches neben weiteren neuen Features Erneuerungen in der Bildqualität (HDR10) und der Auflösung in UHD (nur in Bildern/Videos) mit sich brachte, auf dem Markt eingeführt.[11]
                                     Im November 2017 wurde mit der Xbox One X eine kostenintensivere und leistungsfähigere Version der Konsole veröffentlicht. Am 16. April 2019 kündigte Microsoft mit der Xbox One S All-Digital Edition eine Xbox One S
                                     ohne Laufwerk an. Der Nachfolger wurde unter dem Konzeptnamen Project Scarlett am 9. Juni 2019 auf der Electronic Entertainment Expo in Los Angeles angekündigt. Der Release ist für 2020 geplant</div><br>
-                                <div class="card container-md shadow-lg p-4 mb-4 bg-dark text-white border border-success" style="width: fit-content;  font-family: 'Crimson Text', serif; ">
+                                <div class="card container-md shadow-lg p-4 mb-4 bg-dark text-white border border-success " style="width: fit-content; font-family: 'Crimson Text', serif; ">
                                     <div class="card-header "><b>Technische Daten</b></div>
                                     <div class="card-body ">
                                         <div><kbd class="bg-success ">Hauptprozessor :</kbd></div><br>
@@ -193,24 +236,24 @@
                                 </div>
                             </div>
 
-                            <div class="carousel-item">
+                            <div class="carousel-item ">
                                 <div class="mx-auto " style="width:300px ">
                                     <h1><span class="badge badge-danger ">Nintendo Switch</span></h1>
                                 </div>
-                                <img class="img-fluid" src="Switch.png " alt="New York " width="1100 " height="500 ">
+                                <img class="img-fluid " src="Switch.png " alt="New York " width="1100 " height="500 ">
                                 <h2>Publisher : Nintendo</h2>
                                 <div>Die Nintendo Switch (kurz Switch, Codename: NX[5]) ist die erste hybride Spielkonsole des japanischen Herstellers Nintendo. Sie erschien am 3. März 2017 in Europa, Australien, Nordamerika und Asien[6] sowie am 15. August
                                     2017 in Argentinien.[7] Als Hybrid lässt sich der Nachfolger der Wii U sowohl als stationäre, mit einem externen Bildschirm verbundene Konsole nutzen als auch für Handheld-Spiele. Abnehmbare Bedienelemente namens „Joy-Con“
                                     ermöglichen Spiele in eine dritten Variante, dem sogenannten Tisch-Modus. Die Nintendo Switch gehört zur achten Konsolengeneration und steht in direkter Konkurrenz zu Sonys PlayStation 4 und Microsofts Xbox One.
                                 </div><br>
-                                <div class="card container-md shadow-lg p-4 mb-4 bg-dark text-white border border-danger" style="width: fit-content; font-family: 'Crimson Text', serif; ">
+                                <div class="card container-md shadow-lg p-4 mb-4 bg-dark text-white border border-danger " style="width: fit-content; font-family: 'Crimson Text', serif; ">
                                     <div class="card-header "><b>Technische Daten</b></div>
                                     <div class="card-body ">
                                         <div><kbd class="bg-danger ">Media :</kbd></div><br>
                                         <div>Game Card Digital distribution</div><br>
                                         <div><kbd class="bg-danger ">System-on-chip used :</kbd></div><br>
                                         <div>Nvidia Tegra X1–based</div><br>
-                                        <div><kbd class="bg-danger">CPU :</kbd></div><br>
+                                        <div><kbd class="bg-danger ">CPU :</kbd></div><br>
                                         <div>Quad-core Cortex-A57 + quad-core Cortex-A53 @ 1.02 GHz</div><br>
                                         <div><kbd class="bg-danger ">Display :</kbd></div><br>
                                         <div> 6.2-inch, 1280 × 720p LCD (237 ppi)</div>
@@ -237,62 +280,68 @@
 
             </div>
             <!--Tab3-->
-            <div id="menu2" class="container tab-pane  "><br>
-                <h1 class="jumbotron " style="background-color: white;font-family: 'Indie Flower', cursive;">Controller</h1>
-                <p style=" font-size: large;">Es gibt verschiedenste Controller-Varianten für jegliche Consolen und den Pc. Sie sind bei vielen Spielegemeinden sehr beliebt da die Controller im Gegensatz zur Tastatur relativ leicht zu bedienen sind. Anders als bei den Consolen gibt
+            <div id="menu2" class="container tab-pane "><br>
+                <h1 class="jumbotron " style="background-color: white;font-family: 'Indie Flower', cursive; ">Controller</h1>
+                <p style=" font-size: large; ">Es gibt verschiedenste Controller-Varianten für jegliche Consolen und den Pc. Sie sind bei vielen Spielegemeinden sehr beliebt da die Controller im Gegensatz zur Tastatur relativ leicht zu bedienen sind. Anders als bei den Consolen gibt
                     es sehr viele unterschiedliche Anbieter für Controller aller Art. </p>
                 <!--Cards for controller types-->
-                <div class="card-deck">
-                    <div style="min-width: 350px;  margin-top: 10px;" class="card bg-dark text-primary border border-primary">
-                        <div class="card-header">DUALSHOCK®4 Wireless Controller</div>
-                        <div class="card-body">
-                            <video style="width: 100%;" width="auto" height="240" autoplay loop controls>
-                            <source src="dualshock-4-fall-colors-video-hero-01-ps4-us-12aug19.mp4" type="video/mp4">
+                <div class="card-deck ">
+                    <div style="min-width: 260px; margin-top: 10px; " class="card bg-dark text-primary border border-primary ">
+                        <div class="card-header ">DUALSHOCK®4 Controller</div>
+                        <div class="card-body ">
+                            <video style="width: 100%; " width="auto " height="240 " autoplay loop controls>
+                            <source src="dualshock-4-fall-colors-video-hero-01-ps4-us-12aug19.mp4 " type="video/mp4 ">
                             Your browser does not support the video tag.
                           </video>
-                            <div class="mx-auto" style="width: fit-content;"><kbd> Zocken mit Stil – </kbd></div><br>
+                            <div class="mx-auto " style="width: fit-content; "><kbd> Zocken mit Stil – </kbd></div><br>
                             <div>wähl deinen brandneuen DUALSHOCK 4 Wireless-Controller aus vier frischen und aufregenden Farben.</div>
                         </div>
-                        <div class="card-footer">
-                            <button type="button" onclick="" class="btn spinner-border text-primary" style="float: left;"></button>
-                            <button type="button" onclick="" class="btn btn-link" style="float: right;">Mehr -></button>
+                        <div class="card-footer ">
+                            <button type="button " onclick=" " class="btn spinner-border text-primary " style="float: left; "></button>
+                            <button type="button " onclick=" " class="btn btn-link " style="float: right; ">Mehr -></button>
                         </div>
                     </div>
-                    <div style="min-width: 350px;  margin-top: 10px;" class="card bg-dark border border-success text-success">
-                        <div class="card-header">Xbox Elite Wireless Controller</div>
-                        <div class="card-body">
-                            <video style="width: 100%;" width="auto" height="240" autoplay loop controls>
-                            <source src="Xbox-Elite-Wireless-Controller-The-Worlds-Most-Advanced-Controller-720p (1).mp4" type="video/mp4">
+                    <div style="min-width: 260px; margin-top: 10px; " class="card bg-dark border border-success text-success ">
+                        <div class="card-header ">Xbox Elite Wireless Controller</div>
+                        <div class="card-body ">
+                            <video style="width: 100%; " width="auto " height="240 " autoplay loop controls>
+                            <source src="Xbox-Elite-Wireless-Controller-The-Worlds-Most-Advanced-Controller-720p (1).mp4 " type="video/mp4 ">
                             Your browser does not support the video tag.
                           </video>
-                            <div class="mx-auto" style="width: fit-content;"><kbd>Der weltweit fortschrittlichste</kbd></div>
-                            <div class="mx-auto" style="width: fit-content;"><kbd> Controller.</kbd></div><br>
+                            <div class="mx-auto " style="width: fit-content; "><kbd>Der weltweit</kbd></div>
+                            <div class="mx-auto " style="width: fit-content; "><kbd> fortschrittlichste</kbd></div>
+                            <div class="mx-auto " style="width: fit-content; "><kbd> Controller.</kbd></div><br>
                             <div>Der Xbox Elite Controller passt sich deinen Händen und deinem Spielstil an.</div>
                         </div>
-                        <div class="card-footer">
-                            <button type="button" onclick="" class="btn spinner-border text-success" style="float: left;"></button>
-                            <button type="button" onclick="" class="btn btn-link text-success" style="float: right;">Mehr -></button>
+                        <div class="card-footer ">
+                            <button type="button " onclick=" " class="btn spinner-border text-success " style="float: left; "></button>
+                            <button type="button " onclick=" " class="btn btn-link text-success " style="float: right; ">Mehr -></button>
                         </div>
                     </div>
-                    <div style="min-width: 350px; margin-top: 10px;" class="card bg-dark border border-danger text-danger">
-                        <div class="card-header">Nintendo switch Pro Controller</div>
-                        <div class="card-body">
-                            <div class="mx-auto" style="width:fit-content;">
-                                <img src="7a20f413-2f9e-46c9-9b5f-8cdb32d125cc_1.1f0a2f6313f2fb2cd3c42f4566f44506.png" alt="Nintendo switch" style="max-width: 100%;">
+                    <div style="min-width: 260px; margin-top: 10px; " class="card bg-dark border border-danger text-danger ">
+                        <div class="card-header ">Nintendo switch Pro Controller</div>
+                        <div class="card-body ">
+                            <div class="mx-auto " style="width:fit-content; ">
+                                <img src="7a20f413-2f9e-46c9-9b5f-8cdb32d125cc_1.1f0a2f6313f2fb2cd3c42f4566f44506.png " alt="Nintendo switch " style="max-width: 100%; ">
                             </div>
                             <div>Dieser kabellose Controller im traditionellen Controller-Design liegt gut in der Hand und ist angenehm auch bei längerem Spielen im TV-Modus und Tisch-Modus.</div>
                         </div>
-                        <div class="card-footer">
-                            <button type="button" onclick="" class="btn spinner-border text-danger" style="float: left;"></button>
-                            <button type="button" onclick="" class="btn btn-link text-danger" style="float: right;">Mehr -></button>
+                        <div class="card-footer ">
+                            <button type="button " onclick=" " class="btn spinner-border text-danger " style="float: left; "></button>
+                            <button type="button " onclick=" " class="btn btn-link text-danger " style="float: right; ">Mehr -></button>
                         </div>
                     </div>
                 </div>
             </div>
             <!--Tab4 (Dropdown 01)-->
-            <div id="shooter" class="container tab-pane  "><br>
+            <div id="shooter" class="container tab-pane "><br>
                 <h3>Shooter</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <div class="container " style="float: left;width: 50%; ">
+                    <div> efek</div>
+                </div>
+                <div class="container " style="float: left;width: 50%; "> <img src="tracergun.png " alt="gun " width="100% "></div>
+                <div>vzdhcbi</div>
             </div>
             <!--Tab4 (Dropdown 02)-->
             <div id="Jump" class="container tab-pane "><br>
@@ -309,7 +358,10 @@
 </body>
 
 <!--Footer-->
-<footer>
+<footer class="jumbotron text-center bg-dark text-white rounded-0 jumbotron-footer " style="margin-bottom: 0%; ">
+    <p><i class='uil uil-copyright'></i> Spengergasse</p>
+
+    <a href="Impressum.html ">"Impressum "</a></div>
 
 </footer>
 

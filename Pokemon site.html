@@ -13,18 +13,56 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Courgette&display=swap" rel="stylesheet">
+    <script src="JAVASC01.js"></script>
 </head>
 
 <body>
-    <h1 class="jumbotron" style="background-color: transparent; text-align: center;">Pokemon</h1>
-    <div class="container ">
-        <div style="float: left; width: 40%;" class="border border-dark">
-            <img src="map.jpg" alt="" width="100%">
-        </div>
-        <div style="float:left;  width: 60%;">
-            <hr>
-            <h1> Sword and Shield </h1>
-            <hr>
+    <!--nav-->
+    <nav class=" nav navbar navbar-expand-sm bg-dark navbar-dark sticky-top" style="font-family: 'Courgette',cursive;">
+        <!-- Brand/logo -->
+        <a class="navbar-brand" href="#">
+            <img src="Unbenannt-1.png" alt="logo" style="height: 150px;" onclick="window.close()" data-toggle="tooltip" title="Schließt das Fenster!">
+        </a>
+
+        <!-- Links -->
+        <ul class="nav navbar-nav ">
+            <li class="nav-item">
+                <a class="nav-link active" data-toggle="tab" href="#home">
+                    <h2>Ruhmeshalle</h2>
+                </a>
+
+                <div>
+                    <!--Unnötiger Button-->
+                    <button class="text-white bg-dark" style="margin-left: 20%;border: none;float: left;" onclick="darkmode() "><i class="fas fa-backward"></i></button>
+                </div>
+                <div>
+                    <!--Unnötiger Button-->
+                    <button class="text-white bg-dark" style="margin-left: 30%;border: none;float: left;" onclick="whitemode() "><i class="fas fa-forward"></i></button>
+                </div>
+    </nav>
+    <!--Nav Ende-->
+    <div id="body">
+        <h1 class="jumbotron" style="background-color: transparent;">Thanks to all the iconic games!</h1>
+        <h3></h3>
+        <button class="btn bg-dark" data-toggle="collapse" data-target="#demo">
+                    <div class=" card bg-dark" style="width: 17.5%;float: left ;min-width: 77px;  "><img src="Terra_Blade.png " alt=" " width="100% " height="100% "></div>
+                    <div class="card bg-dark" style="float: left ; width: 60%;min-width: 260px; "><img src="Terra_Blade_(demo).gif " alt=" " style="width: 100%; "></div>
+                </button>
+        <div id="demo" class="collapse ">
+            <div class="card border-success bg-dark" style="width: fit-content;">
+                <div class="card-body"><img src="Terraria-Full-APK-Free-Download.png" alt="" width="30%" style="float: left;">
+                    <div class="text-white" style="text-align: center;">
+                        <h3>Terraria</h3>
+                        <div>Graben, Kämpfen, Erkunden, Bauen!</div>
+                        <div> In dem Action-Adventure Spiel Terraria ist nichts unmöglich.</div>
+                    </div>
+                </div>
+                <div class="card-footer text-success">
+                    <p style="float:right;">Mehr-></p>
+                </div>
+            </div>
         </div>
     </div>
 </body>
