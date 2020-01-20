@@ -30,9 +30,11 @@ function darkmode() {
     document.getElementById("body").style.backgroundColor = "rgb(31, 29, 29)";
     document.getElementById("body").style.color = "white";
     var x = document.getElementsByClassName("jumbotron");
+    var y = document.getElementsByClassName("text-dark-white");
     for (var i = 0; i < x.length; i++) {
         x[i].style.backgroundColor = "rgb(31, 29, 29)";
         x[i].style.color = "white";
+        y[i].style.color = "black";
     }
 }
 
@@ -40,8 +42,11 @@ function whitemode() {
     document.getElementById("body").style.backgroundColor = "white";
     document.getElementById("body").style.color = "black";
     var x = document.getElementsByClassName("jumbotron");
+    var y = document.getElementsByClassName("text-dark-white");
     for (var i = 0; i < x.length; i++) {
         x[i].style.backgroundColor = "white";
         x[i].style.color = "black";
+        y[i].style.backgroundColor = "white";
+        y[i].style.color = "black";
     }
 }
