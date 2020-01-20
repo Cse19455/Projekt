@@ -359,23 +359,53 @@
             </div>
             <!--Tab4 (Dropdown 01)-->
             <div id="shooter" class="container tab-pane "><br>
-                <h3>Shooter</h3>
-                <p>Shooter games are a subgenre of action video game, which often test the player's spatial awareness, reflexes, and speed in both isolated single player or networked multiplayer environments. Shooter games encompass many subgenres that have
-                    the commonality of focusing on the actions of the avatar engaging in combat with a weapon against both code-driven NPC enemies or other avatars controlled by other players.</p>
-                <div class="container " style="float: left;width: 50%; ">
+                <h1 class="jumbotron" style="background-image: url('Download.jpg');background-repeat: no-repeat;background-size: 100%;">Shooter</h1>
+                <p>Shooter-Spiele sind ein Subgenre des Action-Videospiels , bei dem das räumliche Bewusstsein, die Reflexe und die Geschwindigkeit des Spielers häufig sowohl in isolierten Einzelspieler- als auch in vernetzten Mehrspielerumgebungen getestet werden . Shooter-Spiele umfassen viele Subgenres, die sich auf die Aktionen des Avatars konzentrieren , der mit einer Waffe gegen codegesteuerte NPC-Feinde oder andere Avatare kämpft, die von anderen Spielern kontrolliert werden.</p>
+                
+                <ul>
+                    <li><h2>Light gun shooters</h2></li><br>
+                    <div>Light Gun Shooter sind Shooter- Galeriespiele, die ein Zeigegerät für Computer und ein Steuergerät für Arcade- und Videospiele verwenden . Die ersten Lichtkanonen wurden in den 1930er Jahren nach der Entwicklung von lichtempfindlichen Vakuumröhren entwickelt . Es dauerte nicht lange, bis die Technologie in Arcade- Shootern zum Einsatz kam, beginnend mit dem Seeburger Ray-O-LiteIn diesen frühen Light Gun-Spielen wurden kleine Ziele (normalerweise bewegliche) verwendet, auf denen eine Lichtsensorröhre montiert war. Der Spieler benutzte eine Waffe (normalerweise ein Gewehr), die einen Lichtstrahl ausstrahlte, wenn der Abzug gedrückt wurde. Wenn der Strahl das Ziel traf, wurde ein "Treffer" erzielt. Moderne bildschirmbasierte Lichtkanonen arbeiten nach dem entgegengesetzten Prinzip: Der Sensor ist in die Waffe selbst eingebaut, und die auf dem Bildschirm angezeigten Ziele senden Licht aus und nicht die Waffe. Die erste Lichtkanone dieses Typs wurde auf dem MIT Whirlwind- Computer verwendet, der einen ähnlichen Lichtstift verwendete . Wie bei Rail-Shootern ist die Bewegung bei Light-Gun-Spielen in der Regel eingeschränkt.</div>
+                    <br><li><h2>First-person shooters</h2></li>
+                    <br>
+                    <div>Ego-Shooter zeichnen sich durch eine Bildschirmansicht aus, die die Sichtweise des Spielcharakters simuliert. Viele Rail-Shooter und Light-Gun-Shooter verwenden zwar auch eine Ego-Perspektive , sind jedoch in der Regel nicht in dieser Kategorie enthalten.</div>
+                </ul>
+                    <div class="container " style="float: left;width: 50%; ">
                     <div>
-                        <div class="container " style="float: left;width: 100%; "> <img src="Tracer.png " alt="gun " width="100% "></div>
+                        <div class="container " style="float: left;width: 100%; "> <img src="Tracer.png " alt="gun " width="100% " ></div>
                     </div>
                 </div>
-                <div class="container " style="float: left;width: 50%; "> <img src="tracergun.png " alt="gun " width="100% "></div>
-                <div>vzdhcbi</div>
-                <h2>Light gun shooters</h2>
-                <h2>First-person shooters</h2>
+                <h2 class="container " style="float: left;width: 50%;"><img src="Overwatch.png" alt="" style="width:40%;"></h2>
             </div>
             <!--Tab4 (Dropdown 02)-->
             <div id="Jump" class="container tab-pane "><br>
                 <h3>Jump and Run</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <p>Die Bezeichnung „Jump ’n’ Run“ hat sich im deutschen Sprachgebrauch als Computerspielbegriff etabliert, ist im Englischen jedoch als Bezeichnung für das Genre eher unüblich. Stattdessen wird dort generell von platform game oder kurz platformer gesprochen.[1] Entsprechend werden derartige Spiele im deutschsprachigen Raum manchmal auch als Plattformspiele oder kurz Plattformer bezeichnet, wobei sich im Laufe der Zeit diverse Untergenres herausgebildet haben.</p>
+                <div>Einer der Bekanntesten „Jump ’n’ Run“  Games ist die Spielereihe Supermario</div>
+                
+
+<div class="container mt-3 border">
+    <h2>Super Mario Spiele :</h2>
+    <p>Suche ein spezifisches Spiel :</p>
+    <input class="form-control" id="myInput" type="text" placeholder="Search..">
+    <div id="myDIV" class="mt-3">
+      <p>I am a paragraph.</p>
+      <div>I am a div element inside div.</div>
+      <button class="btn">I am a button</button>
+      <button class="btn btn-info">Another button</button>
+      <p>Another paragraph.</p>
+    </div>
+  </div>
+  
+  <script>
+  $(document).ready(function(){
+    $("#myInput").on("keyup", function() {
+      var value = $(this).val().toLowerCase();
+      $("#myDIV *").filter(function() {
+        $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+      });
+    });
+  });
+  </script>
             </div>
             <!--Tab4 (Dropdown 03)-->
             <div id="Adv" class="container tab-pane "><br>
@@ -388,7 +418,7 @@
 
 <!--Footer-->
 <footer class="jumbotron text-center bg-dark text-white rounded-0 jumbotron-footer " style="margin-bottom: 0%; ">
-    <p><i class='uil uil-copyright'></i> Philipp Cserich</p>
+    <p><br><i class='uil uil-copyright'></i> Philipp Cserich</p>
 
     <a href="Impressum.html">"Impressum" </a><a href="">"Kontaktformular"</a></div>
 
